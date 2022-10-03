@@ -1,0 +1,39 @@
+#wrapper {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+}
+
+#card {
+  background-color: #ffffff;
+  max-width: 334px;
+  border-radius: 4px;
+}
+
+img {
+  width: 334px;
+  height: auto;
+}
+/* 
+#card p {
+  padding: 25px;
+  padding-top: 5px;
+}
+
+#card h2 {
+  padding: 25px;
+  padding-bottom: 0px;
+} */
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 320px;
+  }
+
+  img {
+    width: 320px;
+    width: 100%;
+    height: auto;
+  }
+}
