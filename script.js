@@ -1,13 +1,11 @@
-'use strict';
+
 let data = null;
 async function prepare() {
    
     let response = await fetch('http://hp-api.herokuapp.com/api/characters');
-     if (response.ok) {
         data = await response.json()
         createOptions()
         createCards(data)
-    } else {alert('error')}
 }
  prepare()
 
