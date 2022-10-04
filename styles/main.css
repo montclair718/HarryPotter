@@ -34,10 +34,6 @@ img {
 } */
 
 @media (max-width: 400px) {
-  .container {
-    max-width: 320px;
-  }
-
   img {
     background-size: cover;
     background-color: #d2caca;

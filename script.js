@@ -54,13 +54,19 @@ function createCards(cards) {
         
         let h1Card = document.createElement('h1')
         h1Card.textContent = person.name
+        let spanCard = document.createElement('span')
+        spanCard.textContent = `Actor : ${person.actor}`
         let pCard = document.createElement('p')
         let description = "";
         for (let key in person) {
             if (['gender','house', 'alive'].includes(key)) {
-                description += `${key} : ${(person[key])} <br \>`
+                description += `${key.charAt(0).toUpperCase() +
+                    key.slice(1)} : ${(person[key])} <br \>`
             } 
-            if (['wand'].includes(key)) {description += `${key} : ${person.wand.core} <br \>`}
+            if (['wand'].includes(key)) {
+                description += `${key.charAt(0).toUpperCase() +
+                key.slice(1)} : ${person.wand.core} <br \>`
+            }
         }
         
     
@@ -68,6 +74,7 @@ function createCards(cards) {
         pCard.innerHTML = description
         div1.append(imgCard)
         div1.append(h1Card)
+        div1.append(spanCard)
         div1.append(pCard)
         
         container.append(div1)
