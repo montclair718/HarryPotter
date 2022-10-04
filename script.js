@@ -51,16 +51,19 @@ function createCards(cards) {
         let imgCard = document.createElement('img')
         imgCard.src = person.image
         
-        
         let h1Card = document.createElement('h1')
         h1Card.textContent = person.name
         let pCard = document.createElement('p')
         let description = "";
         for (let key in person) {
-            if (!['name', 'image'].includes(key)) {
-                description += `${key} : ${person[key]} <br \>`
-            }
+            if (['gender','house', 'alive'].includes(key)) {
+                description += `${key} : ${(person[key])} <br \>`
+            } 
+            else if (['wand'].includes(key)) {description += `${key} : ${person.wand.core} <br \>`}
         }
+        
+    
+        
         pCard.innerHTML = description
         div1.append(imgCard)
         div1.append(h1Card)
