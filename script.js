@@ -63,9 +63,10 @@ function createCards(cards) {
                 description += `${key.charAt(0).toUpperCase() +
                     key.slice(1)} : ${(person[key])} <br \>`
             } 
+            
             if (['wand'].includes(key)) {
                 description += `${key.charAt(0).toUpperCase() +
-                key.slice(1)} : ${person.wand.core} <br \>`
+                    key.slice(1)} core: ${person.wand.core} <br \>`
             }
         }
         
