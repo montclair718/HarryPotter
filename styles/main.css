@@ -13,6 +13,8 @@
 
 img {
   background-size: cover;
+  background-color: #d2caca;
+  object-fit: cover;
   width: 334px;
   height: 400px;
 }
