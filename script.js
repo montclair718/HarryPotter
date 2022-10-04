@@ -47,7 +47,10 @@ function createCards(cards) {
     for (let person of cards) {
         let div1 = document.createElement('div')
         let imgCard = document.createElement('img')
-        imgCard.src = person.image
+        imgCard.src = person.image;
+        if (person.image === "") {
+            imgCard.src = './images/istockphoto-526947869-612x612.jpeg';
+        }
         
         let h1Card = document.createElement('h1')
         h1Card.textContent = person.name
@@ -57,7 +60,7 @@ function createCards(cards) {
             if (['gender','house', 'alive'].includes(key)) {
                 description += `${key} : ${(person[key])} <br \>`
             } 
-            else if (['wand'].includes(key)) {description += `${key} : ${person.wand.core} <br \>`}
+            // else if (['wand'].includes(key)) {description += `${key} : ${person.wand.core} <br \>`}
         }
         
     
