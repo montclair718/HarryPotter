@@ -12,8 +12,13 @@
 }
 
 img {
+  background-size: cover;
   width: 334px;
-  height: auto;
+  height: 400px;
+}
+
+#wrapper.div {
+  background-image: cover;
 }
 /* 
 #card p {
