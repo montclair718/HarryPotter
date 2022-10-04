@@ -39,8 +39,10 @@ img {
   }
 
   img {
-    width: 320px;
-    width: 100%;
-    height: auto;
+    background-size: cover;
+    background-color: #d2caca;
+    object-fit: cover;
+    width: 300px;
+    height: 350px;
   }
 }

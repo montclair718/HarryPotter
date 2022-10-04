@@ -60,7 +60,7 @@ function createCards(cards) {
             if (['gender','house', 'alive'].includes(key)) {
                 description += `${key} : ${(person[key])} <br \>`
             } 
-             if (['wand'].includes(key)) {description += `${key} : ${person.wand.core} <br \>`}
+            if (['wand'].includes(key)) {description += `${key} : ${person.wand.core} <br \>`}
         }
         
     
